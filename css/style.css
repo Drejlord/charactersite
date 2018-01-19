@@ -73,7 +73,7 @@ a:visited {
 a:hover {
 	/* Applies to all unvisited links */
 	text-decoration: none;
-	color: #fff;
+	
 }
 
 #nav-main {
@@ -87,6 +87,7 @@ a:hover {
 	font-family: Aldrich;
 	font-weight: 400;
 	font-size: 14px;
+	color: #fff;
 	z-index: 98;
 }
 
@@ -99,28 +100,53 @@ a:hover {
 	margin: 0 auto;
 	padding: 20px;
 	
-	
 }
 
 	
 .info1 > a {
 	
+	position: relative;
   height: 100%;
 	width: 500px;
 	padding: 21px;
-
+  color: #fff;
+	text-decoration: none;
 	
 }
+
+/**Begin fancy pants line animation**/
+
+.info1 > a:before {
+	
+ content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+	
+}
+
+.info1 > a:hover:before,
+.info1 > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/**End fancy pants line animation**/
 
 .info1 div {
 	
 	position: absolute;
 	display: none;
 	z-index: 97;
-
+	
 }
-
-
 
 
 .info1 div ul li {
@@ -142,8 +168,8 @@ a:hover {
   z-index: 96;
 	width: 100%;
 	float: right;
-	right: 7px;
-	transform: translateY(7px);
+	right: 23px;
+	transform: translateY(6px);
 	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
 }
@@ -161,11 +187,7 @@ a:hover {
 	
   background-color: #000;
 	
-	
 }
-
-
-
 
 /**end dropdown**/
 
@@ -178,7 +200,6 @@ a:hover {
 	width: 37%;
 	min-width: 6.25px;
 	margin-top: 5%;
-	top: 5%;
 	float: right;
 	right: 19%;
 	color: #fff;
@@ -192,7 +213,6 @@ a:hover {
 	position: absolute;
 	width: 20%;
 	margin-top: 5%;
-	top: 5%;
 	float: left;
 	left: 22%;
 	color: #fff;
@@ -229,6 +249,18 @@ a:hover {
 	padding: 0px;
 }
 
+.home_page {
+	
+	background-color: #000;
+	opacity: 0.9;
+	position: absolute;
+	width: 100%;
+	min-width: 6.25px;
+	z-index: 95;
+	overflow: hidden;
+
+}
+
 .drej {
 	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
 	font-size: 34px;
@@ -243,11 +275,10 @@ a:hover {
 	font-family: "Cambria", Times, serif;
 	position: absolute;
 	width: 53%;
-	margin-top: 3%;
-	top: 3%;
+	margin-top: 1em;
 	float: right;
 	right: 25%;
-	height: 100%;
+	height: 98%;
 	overflow: hidden;
 	z-index: 93;
 	color: #fff;
@@ -259,7 +290,7 @@ a:hover {
 .card_summary {
 	background-color: #000;
 	opacity: 0.9;
-	height: 92%;
+	height: 96%;
 	border-radius: 0.31em;
 	/* 5px rounded corners */
 	margin-top: 5%;
@@ -278,7 +309,7 @@ a:hover {
 	
 	background-color: #000;
 	opacity: 0.9;
-	height: 92%;
+	height: 96%;
 	border-radius: 0.31em;
 	/* 5px rounded corners */
 	top: 4%;
@@ -428,8 +459,7 @@ a:hover {
 	padding: 0.56em;
 	background-color: #060606;
 	text-indent: 0.13em;
-	border-style: double;
-	border-color: #413347;
+
 }
 
 .contacts {
@@ -444,8 +474,7 @@ a:hover {
 	overflow: hidden;
 	z-index: 92;
 	color: #fff;
-	border-style: double;
-	border-color: #8B8B8B;
+
 }
 
 .characterlist {
@@ -459,6 +488,5 @@ a:hover {
 	right: 25%;
 	z-index: 91;
 	color: #fff;
-	border-style: double;
-	border-color: #8B8B8B;
+	
 }
