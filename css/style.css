@@ -1,5 +1,5 @@
 body {
-	background-image: url("https://i.imgur.com/8zJZpyM.png");
+	background-image: url("https://i.imgur.com/J33ue83.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -230,11 +230,23 @@ a:hover {
 	color: #ffffff;
 	text-align: justify;
 	margin: 0 auto;
-	width: 28em;
+	width: 34em;
 	word-wrap: break-word;
 	padding: 1px;
 	margin: auto;
 	display: block;
+}
+
+#needless_info {
+	font-family: "Cambria", Times, serif;
+	font-size: 20px;
+	line-height: 1.25em;
+	color: #ffffff;
+	word-wrap: break-word;
+	padding: 2%;
+	display: block;
+	text-align: center;
+	
 }
 
 .news_text {
@@ -287,6 +299,7 @@ a:hover {
 }
 
 
+
 .card_summary {
 	background-color: #000;
 	opacity: 0.9;
@@ -302,6 +315,22 @@ a:hover {
 	padding: 0;
 	overflow: scroll;
 	position: absolute;
+	
+}
+
+.about_info {
+	background-color: #000;
+	font-family: "Cambria", Times, serif;
+	position: absolute;
+	float: left;
+	right: 20%;
+	height: 67%;
+	margin-top: 5%;
+	width: 30%;
+	overflow: hidden;
+	z-index: 93;
+	color: #fff;
+
 	
 }
 
@@ -327,6 +356,28 @@ a:hover {
 	position: absolute;
 	
 }
+
+.summary2 {
+	
+	background-color: #000;
+	opacity: 0.9;
+	height: 92%;
+	border-radius: 0.31em;
+	/* 5px rounded corners */
+	margin-top: 5%;
+	top: 4%;
+	
+	margin: auto;
+	width: 100%;
+	padding: 0;
+	overflow: scroll;
+	position: absolute;
+	
+	
+	
+}
+
+/* SCROLLY BAR */
 
 ::-webkit-scrollbar {
 	width: 0.23em;
@@ -354,6 +405,7 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
 	background: #000;
 }
+/* END SCROLLY BAR */
 
 .card_text {
 	font-family: "Cambria", Times, serif;
@@ -374,6 +426,12 @@ a:hover {
 	padding: 0.94em;
 	border-radius: 15%;
 	overflow: hidden;
+}
+
+.elynpic {
+
+	margin-top: 1%;
+	padding: 1%;
 }
 
 .symbol {
@@ -487,6 +545,99 @@ a:hover {
 	float: right;
 	right: 25%;
 	z-index: 91;
+	color: #fff;
+	
+}
+
+#wanted {
+	
+	font-family: "Cabin Sketch";
+	font-size: 59px;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 25px;
+	color: #381C00;
+	line-height: 35.3px;
+	border: 4px;
+	width: 47%;
+	text-align: center;
+	margin: auto;
+	margin-top: 4%;
+	padding: 1%;
+	position: relative;
+	margin-left: 19%;
+	
+}
+
+#criminal {
+	
+	font-family: "Coming Soon";
+	font-size: 40px;
+	line-height: 1.20em;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	color: #381C00;
+	
+}
+
+
+#guard {
+	
+	font-family: "Schoolbell";
+	font-size: 25px;
+	line-height: 1.15em;
+	wdth: 30%;
+	float: right;
+	right: -16%;
+	text-align: center;
+	margin: auto;
+	color: #000;
+	position: relative;
+	margin-top: -3%;
+	
+}
+
+#septims {
+	
+	font-family: "Coming Soon";
+	font-size: 30px;
+	line-height: 1.15em;
+	text-align: center;
+	margin: auto;
+	color: #000;
+	position: relative;
+	margin-top: 1%;
+	
+}
+
+.card_text2 {
+	font-family: "Coming Soon";
+	font-size: 0.9em;
+	line-height: 1.25em;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	word-wrap: break-word;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.wanted_poster {
+	
+	background-color: #000;
+	background-image: url("https://img00.deviantart.net/0e23/i/2011/211/2/d/old_paper_texture_by_freak_by_freak2310-d4262y9.jpg");
+	font-family: "Cambria", Times, serif;
+	position: absolute;
+	top: 6%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	width: 30%;
+	margin: auto;
+	height: 90%;
+	overflow: hidden;
+	z-index: 93;
 	color: #fff;
 	
 }
